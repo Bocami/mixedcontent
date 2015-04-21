@@ -3,6 +3,8 @@ var express = require('express');
 var path = require('path');
 var phantomjs = require('phantomjs');
 
+var port = process.env.PORT || 8080;
+
 var app = express();
 
 app.get('/:hostName', function (req, res) {
@@ -17,7 +19,7 @@ app.get('/:hostName', function (req, res) {
 	});
 });
 
-var server = app.listen(80, function () {
+var server = app.listen(port, function () {
   var host = server.address().address;
   var port = server.address().port;
 
