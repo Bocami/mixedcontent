@@ -5,10 +5,10 @@ var phantomjs = require('phantomjs');
 
 var app = express();
 
-app.get('/:host', function (req, res) {
+app.get('/:hostName', function (req, res) {
 	var childArgs = [
   		path.join(__dirname, 'mixed.js'),
-  		req.params.host
+  		req.params.hostName
 	];
 
 	childProcess.execFile(phantomjs.path, childArgs, function(err, stdout, stderr) {
