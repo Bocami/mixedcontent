@@ -1,0 +1,26 @@
+{
+  "name": "mixedcontent",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.12.3",
+    "phantom": "^0.7.2",
+    "phantomjs": "^1.9.16"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Bocami/mixedcontent.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bocami/mixedcontent/issues"
+  },
+  "homepage": "https://github.com/Bocami/mixedcontent"
+}
